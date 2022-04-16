@@ -39,6 +39,7 @@ public class Project3 {
             for (int i = 0; i < 3; i++) {
                 result = result + word1.charAt(i) + word2.charAt(i);
             }
+            
             System.out.println(result);
         }else if (word1.length() > 3 || word2.length()>3) {
             System.out.println("Incorrect input! Cannot merge.");

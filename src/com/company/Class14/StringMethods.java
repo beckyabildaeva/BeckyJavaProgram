@@ -132,7 +132,7 @@ public class StringMethods {
             System.out.println("12.2 Split Loop: " +words[i]);
         }
         // 12.3 Split Length
-        System.out.println("12.3 Split Length: " +words.length);
+        System.out.println("12.3 Split Length: " + words.length);
         for(int i = 0; i<words.length; i++) {
             System.out.println("12.3 Split Length: " +words[i]);
         }

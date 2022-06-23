@@ -1,12 +1,23 @@
 package com.company.PracticeInterview;
 
-import java.util.Scanner;
-
 public class ReverseString {
     public static void main(String[] args) {
         // to reverse i need the last character of the word, then the second from last, etc
-        reverseAString("java");
+        reverseAString("MacBook Pro");
 
+        StringBuilder sb = new StringBuilder();
+        reverseAStringBuilder(new StringBuilder("MacBook Air"));
+
+    }
+
+    public static void reverseAStringBuilder(StringBuilder sb){
+
+        for (int i = 0; i < sb.length(); i++){
+            sb.insert(i, sb.charAt(sb.length()-1)); // replace 1st char (0) with the last char (sb.length()-1)
+            sb.deleteCharAt(sb.length()-1); // delete the last char of string
+            // count++; // don't need it, if instead of 'count' just use 'i' in insert function
+        }
+        System.out.println(sb);
     }
 
     public static void reverseAString(String str) {
@@ -15,11 +26,5 @@ public class ReverseString {
             rev = rev + str.charAt(i);
         }
         System.out.println(rev);
-
-        if (str.equals(rev)) {
-            System.out.println(str + " is Palindrome");
-        } else {
-            System.out.println(str + " is not a Palindrome");
-        }
     }
 }

@@ -1,5 +1,7 @@
 package com.company.JiraProject;
 
+import com.github.javafaker.Faker;
+
 import java.util.Scanner;
 
 // Given 2 int values greater than 0,
@@ -7,9 +9,15 @@ import java.util.Scanner;
 // Return 0 if they both go over.
 public class GOL_20Fernando {
     public static void main(String[] args) {
+
+        Faker faker = new Faker();
+        System.out.println(faker.company().profession());
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter two digits");
         System.out.println(max(sc.nextInt(), sc.nextInt()));
+
+
     }
     public static int max(int a, int b) {
 

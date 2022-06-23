@@ -6,7 +6,7 @@ public class PrimeNum1to50 {
     }
 
     static void isPrime(int n) {
-
+        // get list of all numbers up to n
         for (int i = 2; i <= n; i++) {
             boolean isPrime = true;
             for (int b = 2; b < i; b++)

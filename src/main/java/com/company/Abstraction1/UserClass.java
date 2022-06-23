@@ -1,2 +1,4 @@
-package com.company.Abstraction1;public class UserClass {
+package com.company.Abstraction1;
+
+public class UserClass {
 }

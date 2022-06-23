@@ -31,9 +31,9 @@ public class Array {
         int j = data1.length-1;
         for(int i = 0; i<data1.length/2; i++){
             // swapping 1st and last digit
-            int temp = data1[i];
-            data1[i] = data1[j];
-            data1[j] = temp;
+            int temp = data1[i]; // store 1st element
+            data1[i] = data1[j]; // reassign last el to 1st
+            data1[j] = temp; // reassign 1st el to last
 
             // decrementing
             j--;
